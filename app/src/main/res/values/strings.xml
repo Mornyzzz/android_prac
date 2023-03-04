@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="auth">Авторизация</string>
+    <string name="buy">Список заказов</string>
+    <string name="orders">Заказов нет</string>
+    <string name="name">Имя</string>
+    <string name="surname">Фамилия</string>
+    <string name="open">Войти</string>
+</resources>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="411dp"
+        android:layout_height="2dp"
+        android:background="#b9c0c1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+    <Button
+        android:id="@+id/buttonAuth"
+        android:layout_width="312dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="@color/input"
+        android:text="@string/open"
+        android:onClick="toSecond"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="304dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="36dp"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/auth">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:hint="@string/name" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextSurname"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:hint="@string/surname" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="411dp"
+        android:layout_height="171dp"
+        android:backgroundTint="@color/auth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageCMD"
+            android:layout_width="182dp"
+            android:layout_height="125dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="23dp"
+            app:srcCompat="@drawable/cmd" />
+
+        <TextView
+            android:id="@+id/textAuth2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="72dp"
+            android:layout_marginBottom="48dp"
+            android:text="центр\nмолекулярной\nдиагностики"
+            android:textColor="@color/cmd"
+            android:textSize="@dimen/sizeCMD"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/auth"
+        android:layout_width="186dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/auth"
+        android:textColor="@color/auth"
+        android:textSize="@dimen/auth"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout3" />
+
+    <ImageView
+        android:id="@+id/imageCMD2"
+        android:layout_width="63dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/auth"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        app:srcCompat="@drawable/face" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:text="Последняя авторизация:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAuth"
+        app:layout_constraintVertical_bias="0.527" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
